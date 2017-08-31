@@ -167,7 +167,7 @@
         if (step > 0) {
           introItems[step - 1] = {
             element: currentElement,
-            intro: currentElement.getAttribute('data-intro').split(/\\n/g).reduce(function(prev,curr,index,array){return prev + '<p>' + curr + '</p>'}, ''),
+            intro: currentElement.getAttribute('data-intro'),
             step: parseInt(currentElement.getAttribute('data-step'), 10),
             tooltipClass: currentElement.getAttribute('data-tooltipClass'),
             highlightClass: currentElement.getAttribute('data-highlightClass'),
@@ -202,7 +202,7 @@
 
           introItems[nextStep] = {
             element: currentElement,
-            intro: currentElement.getAttribute('data-intro').split(/\\n/g).reduce(function(prev,curr,index,array){return prev + '<p>' + curr + '</p>'}, ''),
+            intro: currentElement.getAttribute('data-intro'),
             step: nextStep + 1,
             tooltipClass: currentElement.getAttribute('data-tooltipClass'),
             highlightClass: currentElement.getAttribute('data-highlightClass'),
