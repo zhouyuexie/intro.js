@@ -228,6 +228,8 @@ tr.introjs-showElement > th {
 .introjs-tooltiptext .center {
   height: 2rem;
   line-height: 2rem;
+  margin-top: .5rem;
+  padding-top: .5rem;
   position: relative;
   border-top: 1px solid #ddd;
 }
